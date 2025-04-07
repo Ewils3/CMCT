@@ -1,0 +1,237 @@
+/*test*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+  
+  .intro-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    width: 200px;
+    max-width: 60%;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #8bb3ff; /* light blue */
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    color: #8bb3ff;
+    margin-bottom: 5px;
+  }
+  
+  .tagline {
+    font-size: 18px;
+    color: #a68bff; /* purple */
+  }
+  .intro-screen {
+    transition: opacity 1s ease-in-out;
+  }
+  .intro-screen {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .intro-screen.fade-out {
+    opacity: 0;
+  }
+  
+  /*login page styles*/
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .user-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .welcome {
+    color: #8bb3ff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .signin-label {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 80%;
+    max-width: 300px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .login-button {
+    width: 80%;
+    max-width: 300px;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #a68bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-button:active {
+    transform: scale(0.97);
+  }
+  /*dashboard*/
+  /* .dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  } */
+  .dashboard {
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .icon-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .icon-button {
+    font-size: 24px;
+    background: none;
+    border: 2px solid #8b8b8b;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+  }
+  
+  .greeting-box {
+    background-color: #a5b9ff;
+    padding: 16px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .greeting-text {
+    text-align: left;
+  }
+  
+  .greeting-text .highlight {
+    color: white;
+  }
+  
+  .arrow-button {
+    background-color: #e4dbff;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 20px;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  
+  .stat-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .stat-card {
+    background: white;
+    border-radius: 20px;
+    width: 30%;
+    padding: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .score.purple {
+    color: #a68bff;
+  }
+  .score.blue {
+    color: #7a9dfd;
+  }
+  .score.pink {
+    color: #d4a5ff;
+  }
+  
+  .treatment-button {
+    background-color: #bfe5f1;
+    border: none;
+    border-radius: 40px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .data-box {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  

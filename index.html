@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+  <title>CMCT Intro</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+  <div class="intro-screen" id="introScreen">
+    <img src="images/logo.png" alt="CMCT Logo" class="logo" >
+    <h1 class="title">CMCT</h1>
+    <p class="subtitle">COPD Monitoring and Coaching Tool</p>
+    <p class="tagline">Smart Breathing Starts Here</p>
+  </div>
+
+  <div class="main-content" id="mainContent" style="display: none;">
+    <!-- Main app screen after loading -->
+    <h2>Welcome to the CMCT App</h2>
+  </div>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const intro = document.getElementById("introScreen");
+      intro.style.transition = "opacity 1s ease-in-out";
+  
+      setTimeout(() => {
+        intro.style.opacity = 0;
+        setTimeout(() => {
+          window.location.href = "login.html";
+        }, 1000); // fade duration
+      }, 3000); // 3 seconds
+    });
+  </script>
+</body>
+</html>
